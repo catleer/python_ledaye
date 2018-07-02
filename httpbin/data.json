@@ -1,0 +1,95 @@
+{
+  "TestHttpMethods":
+    {
+      "interface_info": [
+        {
+          "interface_method": "get",
+          "method": "get",
+          "headers": null,
+          "url_data": null,
+          "data": null,
+          "params": null,
+          "auth": null,
+          "cookies": null,
+          "hooks": null,
+          "json": null,
+          "except": ["200"]
+        },
+        {
+          "interface_method": "post",
+          "method": "post",
+          "headers": null,
+          "url_data": null,
+          "data": null,
+          "params": null,
+          "auth": null,
+          "cookies": null,
+          "hooks": null,
+          "json": null,
+          "except": ["200"]
+        }
+      ]
+    },
+  "TestAuth":
+    {
+      "interface_info": [
+        {
+          "interface_method": "get",
+          "method": "get",
+          "headers": null,
+          "url_data": null,
+          "data": null,
+          "params": null,
+          "auth": null,
+          "cookies": null,
+          "hooks": null,
+          "json": null,
+          "except": ["200"]
+        },
+        {
+          "interface_method": "get",
+          "method": "get",
+          "headers": null,
+          "url_data": null,
+          "data": null,
+          "params": null,
+          "auth": null,
+          "cookies": null,
+          "hooks": null,
+          "json": null,
+          "except": ["200"]
+        }
+      ]
+    },
+  "TestStatusCodes":
+    {
+    "interface_info": [
+      {
+        "interface_method": "get",
+          "method": "get",
+          "headers": null,
+          "url_data": null,
+          "data": null,
+          "params": null,
+          "auth": null,
+          "cookies": null,
+          "hooks": null,
+          "json": null,
+          "except": ["200"]
+      },
+      {
+        "interface_method": "get",
+          "method": "get",
+          "headers": null,
+          "url_data": null,
+          "data": null,
+          "params": null,
+          "auth": null,
+          "cookies": null,
+          "hooks": null,
+          "json": null,
+          "except": ["200"]
+      }
+    ]
+  }
+}
