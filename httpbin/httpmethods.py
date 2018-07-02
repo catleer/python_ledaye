@@ -2,7 +2,8 @@
 Created by catleer on 2018-07-02.
 """
 __author__ = 'catleer'
-
+import sys
+sys.path.append('.')
 from urllib.parse import urljoin
 
 import requests
@@ -22,7 +23,8 @@ class Http:
         headers = {} if headers is None else headers
         params = {} if params is None else params
         hooks = {} if hooks is None else hooks
-        url_data = () if url_data is None else url_data
+        url_data = () if url_data is None else tuple(url_data)
+        auth = None if auth is None else tuple(auth)
 
         self.hooks = requests.hooks.default_hooks()
         type(hooks)
@@ -53,7 +55,7 @@ class Http:
         prepped = req.prepare()
         # 如果需要设置代理，可以在s.send中添加并进行配置, 详情查看send的源码
         resp = s.send(prepped)
-        return resp.json()
+        return resp
 
 
 # h = Http(base_url=config.BASE_URL, method='get', data={'test': 'nihao'}, url_method='get')

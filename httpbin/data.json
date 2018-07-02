@@ -7,26 +7,26 @@
           "method": "get",
           "headers": null,
           "url_data": null,
-          "data": null,
+          "data": {"test": "testdata"},
           "params": null,
           "auth": null,
           "cookies": null,
           "hooks": null,
           "json": null,
-          "except": ["200"]
+          "except": [200]
         },
         {
           "interface_method": "post",
           "method": "post",
           "headers": null,
           "url_data": null,
-          "data": null,
+          "data": {"test": "testdata"},
           "params": null,
           "auth": null,
           "cookies": null,
           "hooks": null,
           "json": null,
-          "except": ["200"]
+          "except": [200]
         }
       ]
     },
@@ -34,22 +34,22 @@
     {
       "interface_info": [
         {
-          "interface_method": "get",
+          "interface_method": "basic-auth",
           "method": "get",
           "headers": null,
-          "url_data": null,
+          "url_data": ["testuser", "testpasswd"],
           "data": null,
           "params": null,
-          "auth": null,
+          "auth": ["testuser", "testpasswd"],
           "cookies": null,
           "hooks": null,
           "json": null,
-          "except": ["200"]
+          "except": [200]
         },
         {
-          "interface_method": "get",
+          "interface_method": "bearer",
           "method": "get",
-          "headers": null,
+          "headers": {"Authorization": "justtestauth"},
           "url_data": null,
           "data": null,
           "params": null,
@@ -57,7 +57,7 @@
           "cookies": null,
           "hooks": null,
           "json": null,
-          "except": ["200"]
+          "except": [200]
         }
       ]
     },
@@ -75,7 +75,7 @@
           "cookies": null,
           "hooks": null,
           "json": null,
-          "except": ["200"]
+          "except": [200]
       },
       {
         "interface_method": "get",
@@ -88,7 +88,7 @@
           "cookies": null,
           "hooks": null,
           "json": null,
-          "except": ["200"]
+          "except": [200]
       }
     ]
   }
