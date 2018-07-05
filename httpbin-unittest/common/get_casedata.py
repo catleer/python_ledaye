@@ -7,7 +7,10 @@ import os, codecs, json
 
 
 def get_case_file():
-    parent_path = os.path.abspath('.')
+    if __name__ == '__main__':
+        parent_path = os.path.abspath('..')
+    else:
+        parent_path = os.path.abspath('.')
     dir = parent_path + r'\casedatas'
     case_files = os.listdir(dir)
     for case_file in case_files:
@@ -48,10 +51,10 @@ def get_case_data():
             yield [case_info, case_data, case_result]
 
 
-# if __name__ == '__main__':
-#     file_data = get_case_data()
-#     for i in file_data:
-#         print(i)
+if __name__ == '__main__':
+    file_data = get_case()
+    for i in file_data:
+        print(i)
 
 
 

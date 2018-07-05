@@ -51,4 +51,5 @@ def text_example():
     smtp.quit()
     # print "send email finish"
 
-text_example()
+if __name__ == '__main__':
+    text_example()

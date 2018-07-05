@@ -57,3 +57,5 @@ class Http:
         resp = s.send(prepped)
         return resp
 
+if __name__ == '__main__':
+    pass
