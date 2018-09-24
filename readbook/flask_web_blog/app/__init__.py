@@ -3,8 +3,8 @@ Created by catleer on 2018-09-08.
 """
 __author__ = 'catleer'
 
-# import sys
-# sys.path.append('.')
+import sys
+sys.path.append('.')
 
 from flask import Flask
 from flask_bootstrap import Bootstrap
@@ -13,7 +13,7 @@ from flask_moment import Moment
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from flask_pagedown import PageDown
-from ..configenv import config
+from config import config
 
 login_manager = LoginManager()
 login_manager.session_protection = 'strong'
